@@ -1,0 +1,46 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.about {
+    color: rgba($color: #FFFFFF, $alpha: .8);
+    margin-top: .5rem;
+
+    //  Hide the error of aos, margin no necesary to theleft
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &-email {
+        gap: 1rem;
+
+        h3 {
+            max-width: max-content;
+            padding-bottom: 1rem;
+            @include m.title(2.5rem, blue);
+
+        }
+
+        @include m.phone {
+            width: 100%;
+
+        }
+
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    &-photo {
+        object-fit: cover;
+
+        @include m.phone {
+            width: 100%;
+
+        }
+    }
+}
+
+.blue {
+    color: blue;
+}

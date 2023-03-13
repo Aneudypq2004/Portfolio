@@ -1,0 +1,50 @@
+.tecnology{
+    position: relative;
+    display: grid;
+    height: 40rem;
+    margin-top: 10rem;
+
+
+}
+
+.learn{
+    position: relative;
+    max-width: 6rem;
+    grid-column-start: 2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    margin: auto;
+   
+}
+
+.icons{
+    position: absolute;
+    width: 40rem;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    
+}
+
+
+//Turn animation
+
+.turn {
+    animation: turn1 10s linear infinite;
+    
+}
+
+
+
+@keyframes turn1 {
+    to {
+        transform: rotate(1turn);
+    }
+}

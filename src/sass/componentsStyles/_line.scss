@@ -1,0 +1,68 @@
+@use '../base/mixins' as m;
+
+.line {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: #00daff;
+    margin: 2rem 0;
+
+    @include m.tablet {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+    }
+
+
+    //Circle of the line
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -1rem;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 2rem;
+        height: 2rem;
+        background-color: #00daff;
+        border-radius: 50%;
+        animation: flicker 2s infinite reverse linear;
+
+    }
+
+    // &::after {
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     left: -1rem;
+    //     right: 0;
+    //     bottom: 0;
+    //     width: 2rem;
+    //     height: 2rem;
+    //     background-color: #00daff;
+    //     border-radius: 50%;
+    //     animation: flicker 2s infinite reverse linear;
+
+    // }
+
+
+}
+
+@keyframes flicker {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2) ;
+        
+    }
+}

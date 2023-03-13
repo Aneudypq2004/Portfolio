@@ -1,0 +1,57 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+
+.skills {
+
+    img {
+        width: 4rem;
+    }
+
+
+    &-title {
+        color: white;
+        @include m.title(2rem, blue);
+    }
+
+
+    //Text animation
+
+    &-icon {
+        padding: 0;
+        position: relative;
+
+        p {
+            position: relative;
+            font-size: 1.4rem;
+            color: v.$azul;
+            font-weight: 700;
+            top: -.4rem;
+            margin: 0 auto;
+            bottom: 1;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover {
+            p {
+                opacity: 1;
+            }
+        }
+
+
+    }
+}
+
+//Icons flex
+
+.skills-icons{
+    display: flex;
+    gap:  2rem;
+    flex-wrap: wrap;
+
+}
+

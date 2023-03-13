@@ -1,0 +1,29 @@
+@use '../base/mixins' as m;
+
+
+:root {
+  --clr-neon: #14f7ff;
+  --clr-bg: #001414;
+  --font-size: 3rem;
+}
+
+// Boton Design
+
+.botons {
+  display: flex;
+  justify-content: space-between;
+  
+
+
+}
+
+.boton {
+  @include m.btnNeon(#00daff);
+
+  @include m.boton(#00daff, 1.5rem, 2rem);
+
+  @include m.phone {
+    @include m.boton(#00daff, 1.5rem, 1.5rem);
+  }
+
+}

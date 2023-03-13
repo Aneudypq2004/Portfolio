@@ -1,0 +1,94 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.content {
+    margin-top: 10rem;
+
+
+    // Title
+
+    .name {
+        color: white;
+        font-size: 3rem;
+
+        span {
+            color: #00daff;
+        }
+
+
+        @include m.desktop {
+            white-space: nowrap;
+        }
+
+        @include m.tablet {
+            white-space: nowrap;
+            font-size: 5rem;
+
+        }
+
+    }
+
+    // Job Title
+
+    .job {
+        color: #00daff;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 1.5rem 0;
+
+        @include m.tablet {
+            font-size: 3rem;
+            text-align: end;
+
+        }
+    }
+
+}
+
+//Img background
+
+.background-img {
+    padding: 2rem;
+    background-image:
+        linear-gradient(to top, rgba(v.$black, 70%), rgba(v.$black, 10%)),
+        url(/src/img/1.webp);
+
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    background-position: center center, center center;
+}
+
+
+// Center the content
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+
+
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    @include m.desktop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+//Home screen, the max height
+
+@include m.desktop {
+
+    .vh100 {
+        height: 100vh;
+
+    }
+
+}

@@ -1,0 +1,29 @@
+.footer {
+    max-height: 30rem;
+}
+
+.media {
+    display: flex;
+}
+
+.arrow {
+
+    position: fixed;
+    bottom:  1rem;
+    transform: translateY(5rem);
+    opacity: 0;
+    right: 1rem;
+    transition: all ease 1s;
+
+
+    &-visible{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-color: red;
+    }
+
+}

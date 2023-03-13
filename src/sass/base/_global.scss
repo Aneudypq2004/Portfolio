@@ -1,0 +1,50 @@
+:root {
+  // background-color: #1c1c1c;
+  font-family: 'Blinker', sans-serif;
+  background-color: rgba($color: #000000, $alpha: .95);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.contenedor {
+
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+
+.title {
+  color: white;
+  margin-top: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+.center {
+  text-align: center;
+}
+

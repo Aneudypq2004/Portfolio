@@ -1,0 +1,40 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.education {
+    
+    margin-top: 2rem;
+    color: v.$grisClaro;
+
+
+    &-title {
+        @include m.title(2rem, blue);
+    }
+
+    .software{
+        font-size: 1.5rem; 
+        letter-spacing: 1px;
+        
+        span{
+            color: v.$primario;
+        }
+    }
+
+    &-inst{
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid v.$grisClaro;
+        margin-right: 1rem;
+
+        &:last-of-type{
+            border: none;
+        }
+    }
+
+}
+
+
+.itla{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
