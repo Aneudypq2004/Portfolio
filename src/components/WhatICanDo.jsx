@@ -2,7 +2,22 @@ import React from 'react'
 
 function WhatICanDo() {
   return (
-    <div>WhatICanDo</div>
+    <div className='whatICanDo'>
+
+      <div className='tec tec1'>
+        
+
+      </div>
+
+      <div className='tec tec2'>
+
+      </div>
+
+      <div className='tec tec3'>
+
+      </div>
+
+    </div>
   )
 }
 

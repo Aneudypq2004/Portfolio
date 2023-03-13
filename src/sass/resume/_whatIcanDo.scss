@@ -1,2 +1,30 @@
 @use '../base/mixins' as m;
 @use '../base/variables' as v;
+
+.whatICanDo {
+    @include m.tablet {
+        margin-left: 1rem;
+    }
+
+}
+
+.tec {
+    height: 10rem;
+    border: 1px solid v.$primario;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+
+
+    @include m.tablet {
+
+        &.tec2 {
+            margin-left: 10%;
+        }
+
+        &.tec3 {
+            margin-left: 20%;
+        }
+
+    }
+
+}

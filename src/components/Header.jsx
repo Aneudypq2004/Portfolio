@@ -8,7 +8,7 @@ function Header() {
   const {actualSeccion, setActualSeccion} = UseFolio()
 
   return (
-    <div className='header'>
+    <div className='header' data-aos="fade-left">
 
       <div className='header-nav'>
 

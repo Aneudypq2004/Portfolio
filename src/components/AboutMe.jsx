@@ -34,7 +34,7 @@ function AboutMe() {
 
           <p data-aos="fade-right" >Dluisaneudy82@gmail.com</p>
 
-          <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. V
+          <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. V
             oluptatum voluptate et ut officiis dicta debitis quasi ipsam eius dolores laboriosam q
             uos hic pariatur ipsum delectus vitae harum, assumenda alias! Debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
             et error velit quisquam assumenda itaque!</p>
@@ -51,7 +51,8 @@ function AboutMe() {
 
           data-aos="fade-left"
           data-aos-delay="200"
-          data-aos-duration="1000" />
+          data-aos-duration="500" 
+          />
 
         </div>
 

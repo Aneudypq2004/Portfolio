@@ -11,7 +11,9 @@ import { useEffect, useState } from 'react';
 //Library
 import Aos from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-Aos.init()
+Aos.init({
+  once : true
+})
 
 
 function App() {
@@ -43,9 +45,9 @@ function App() {
 
       <Header />
 
-      <main className="background-img" data-aos="fade-in" ref={ref}>
+      <main className="background-img"  ref={ref} >
 
-        <div className="contenedor flex vh100" id='Home'>
+        <div className="contenedor flex vh100" data-aos="fade-down" id='Home'>
           <div className='content '>
 
             <h1 className='name'><span>&lt;Luis Aneudy</span>  De Los Santos /&gt;</h1>
