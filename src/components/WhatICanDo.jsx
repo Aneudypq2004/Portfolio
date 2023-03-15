@@ -11,7 +11,7 @@ function WhatICanDo() {
         <h4>Frontend</h4>
 
         <p>Develop web applications in the Frontend with React</p>
-
+        
         <p>Styles with css , sass </p>
         
         <p>Tailwindcss to  layout faster </p>
@@ -24,15 +24,17 @@ function WhatICanDo() {
 
         <h4>Backend</h4>
 
-        <p>Php with mysql and sql</p>
-    
         <p>Node Js</p>
+
+
+        <p>Php</p>
+
 
       </div>
 
       <div className='tec tec3' data-aos="fade-left">
         <h4>Stack Mern</h4>
-        <p>Develop web application with MongoDB, Express, React, Node</p>
+        <p>Develop fullstack web application with MongoDB, Express, React, Node</p>
 
 
       </div>

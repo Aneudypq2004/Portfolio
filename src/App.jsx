@@ -2,6 +2,9 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
+
+
 import { handleScroll } from './Helpers/Helpers';
 import PortFolio from './components/PortFolio';
 import UseFolio from './hooks/UseFolio';
@@ -110,6 +113,8 @@ function App() {
       <Resume />
 
       <PortFolio />
+
+      {/* <Contact /> */}
 
       <Footer visible={!inView} />
     </>

@@ -3,7 +3,7 @@ import linkedin from '/icon/linkedin.svg';
 import instagram from '/icon/instagram.svg';
 import telegram from '/icon/telegram.svg';
 import git from '/icon/git.svg';
-import arrow from '../img/arrowUp.svg'
+import arrow from '../img/icon/arrowUp.svg'
 
 
 function Footer({ visible }) {

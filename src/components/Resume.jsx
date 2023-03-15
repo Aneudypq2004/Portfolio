@@ -1,21 +1,28 @@
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+
 import UseFolio from '../hooks/UseFolio';
 
-
-
+import WhatICanDo from './WhatICanDo';
 import Line from './Line';
-import react from '../img/icon/react.svg'
-import node from '../img/icon/node.svg'
+
+// SVG 
+
+import react from '../img/icon/react.svg';
+import node from '../img/icon/node.svg';
+import js from '../img/icon/js.svg';
+import php from '../img/icon/php.svg' ;
+import sass from '../img/icon/sass.svg';
+import tailwind from '../img/icon/tailwind.svg';
+import git from '../img/icon/git.svg';
+
 import dominicanFlag from '../img/Dominican.png';
 import unitedFlag from '../img/united.png';
-import WhatICanDo from './WhatICanDo';
 
 function Resume() {
     const { setActualSeccion } = UseFolio();
 
     //Header state
-
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: .5,
@@ -27,7 +34,7 @@ function Resume() {
             setActualSeccion('Resume')
 
         }
-    }, [inView])
+    }, [inView]);
 
     return (
         <>
@@ -52,27 +59,31 @@ function Resume() {
 
                             {/*  */}
 
+                
                             <div className='skills-icon'>
-                                <p>PHP</p>
-                                <img className="icon-image" src={node} width={40} height={40} alt="Icono node" />
+                                <p>JS</p>
+                                <img className="icon-image" src={js} width={40} height={40} alt="Icono node" />
                             </div>
 
                             <div className='skills-icon'>
-                                <p>JS</p>
-                                <img className="icon-image" src={node} width={40} height={40} alt="Icono node" />
-                            </div>
-                            <div className='skills-icon'>
                                 <p>PHP</p>
-                                <img className="icon-image" src={node} width={40} height={40} alt="Icono node" />
+                                <img className="icon-image" src={php} width={40} height={40} alt="Icono node" />
                             </div>
 
                             <div className='skills-icon'>
                                 <p>SASS</p>
-                                <img className="icon-image" src={node} width={40} height={40} alt="Icono node" />
+                                <img className="icon-image" src={sass} width={40} height={40} alt="Icono node" />
                             </div>
+
                             <div className='skills-icon'>
                                 <p>TailwindCss</p>
-                                <img className="icon-image" src={node} width={40} height={40} alt="Icono node" />
+                                <img className="icon-image" src={tailwind} width={40} height={40} alt="Icono node" />
+                            </div>
+
+
+                            <div className='skills-icon'>
+                                <p>Git</p>
+                                <img className="icon-image" src={git} width={40} height={40} alt="Icono node" />
                             </div>
 
 
@@ -146,13 +157,7 @@ function Resume() {
 
                 <Line />
 
-
-
-
                 <WhatICanDo />
-
-
-
 
             </section>
 

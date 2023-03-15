@@ -7,6 +7,7 @@
 
     img {
         width: 4rem;
+        
     }
 
 
@@ -19,21 +20,18 @@
     //Text animation
 
     &-icon {
-        padding: 0;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         p {
-            position: relative;
+            white-space: nowrap;
             font-size: 1.4rem;
             color: v.$azul;
             font-weight: 700;
-            top: -.4rem;
-            margin: 0 auto;
-            bottom: 1;
-            left: 0;
-            right: 0;
-            opacity: 0;
             transition: all .3s ease-in-out;
+            opacity: 0;
         }
 
         &:hover {
@@ -52,6 +50,5 @@
     display: flex;
     gap:  2rem;
     flex-wrap: wrap;
-
 }
 

@@ -137,12 +137,12 @@
 
 @mixin title($size, $color) {
     color: white;
-    display: inline-block;
+    width: max-content;
     text-transform: uppercase;
     font-size: $size;
     margin-bottom: 2rem;
 
-    &::after {
+    &::after{
         content: "";
         display: block;
         height: .5rem;

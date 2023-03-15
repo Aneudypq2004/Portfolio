@@ -87,7 +87,9 @@
 @include m.desktop {
 
     .vh100 {
+        position: relative;
         height: 100vh;
+        margin-top: 2rem;
 
     }
 

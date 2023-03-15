@@ -60,12 +60,16 @@
 
     @include m.tablet {
 
+        &.tec1{
+            margin-left: 5%;
+        }
+
         &.tec2 {
-            margin-left: 10%;
+            margin-left: 15%;
         }
 
         &.tec3 {
-            margin-left: 20%;
+            margin-left: 25%;
         }
 
     }
