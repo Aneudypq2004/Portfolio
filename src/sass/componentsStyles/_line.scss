@@ -1,5 +1,5 @@
 @use '../base/mixins' as m;
-
+@use '../base/variables' as v;
 .line {
     position: relative;
     height: 2px;
@@ -32,7 +32,7 @@
         margin: auto;
         width: 2rem;
         height: 2rem;
-        background-color: #00daff;
+        background-color: v.$primario;
         border-radius: 50%;
         animation: flicker 2s infinite reverse linear;
 

@@ -47,7 +47,7 @@ function AboutMe() {
 
         <div className="about-photo" >
           
-          <img lazy="loading" src={photo}  alt="Person Photo" 
+          <img src={photo}  alt="Person Photo" 
 
           data-aos="fade-left"
           data-aos-delay="200"

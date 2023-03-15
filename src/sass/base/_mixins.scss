@@ -136,6 +136,7 @@
 //Title
 
 @mixin title($size, $color) {
+    color: white;
     display: inline-block;
     text-transform: uppercase;
     font-size: $size;
