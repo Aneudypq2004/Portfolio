@@ -13,7 +13,6 @@ function Footer({ visible }) {
 
   // Detect if scroll is >= 100
 
-
   useEffect(() => {
 
     if (visible) {
@@ -58,14 +57,12 @@ function Footer({ visible }) {
 
       {/* conditional arrow  */}
 
-      {visible ? (
 
-        <div className={`arrow ${animar ? 'arrow-visible' : ''} `} onClick={handleTop}>
-          <img className='' src={arrow} alt="Scroll to the top" width={40} height={40} />
-        </div>
 
-      )
-        : ''}
+      <div className={`arrow ${animar ? 'arrow-visible' : ''}  ${visible ? 'visible' : ''}`} onClick={handleTop}>
+        <img className='' src={arrow} alt="Scroll to the top" width={40} height={40} />
+      </div>
+
     </div>
   )
 }

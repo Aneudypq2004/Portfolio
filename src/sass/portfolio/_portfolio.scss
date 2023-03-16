@@ -17,6 +17,7 @@
 //Projects
 
 .project {
+    
     position: relative;
     border-radius: .5rem;
     overflow: hidden;
@@ -34,6 +35,7 @@
     }
 
     //Content Styles
+
     &:hover {
         .project_content {
             transform: translateY(0);
@@ -72,7 +74,7 @@
                 border-radius: 1.5rem;
 
                 &:hover {
-                    background-color: rgba($color: v.$primario, $alpha: 1);
+                    background-color: darken($color: v.$primario, $amount: 10%);
                 }
             }
         }

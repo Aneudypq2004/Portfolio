@@ -7,14 +7,12 @@
 }
 
 .arrow {
-
     position: fixed;
     bottom:  1rem;
     transform: translateY(5rem);
     opacity: 0;
     right: 1rem;
-    transition: all ease 1s;
-
+    transition: all ease .5s;
 
     &-visible{
         transform: translateY(0);
@@ -26,4 +24,9 @@
         border-color: red;
     }
 
+}
+
+
+.visible{
+    display: block;
 }
