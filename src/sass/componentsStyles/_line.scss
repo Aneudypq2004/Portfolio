@@ -10,10 +10,10 @@
     @include m.tablet {
         position: absolute;
         width: 2px;
-        height: 100%;
+        height: calc(100% - 2rem);
+        top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
         margin: auto;
 
     }

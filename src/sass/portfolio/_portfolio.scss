@@ -44,6 +44,7 @@
 
     &_content {
         position: absolute;
+        min-height: 50%;
         background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .5));
         transform: translateY(15rem);
         transition: all .7s ease-in-out;
