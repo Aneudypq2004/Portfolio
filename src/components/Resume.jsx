@@ -38,7 +38,7 @@ function Resume() {
 
     return (
         <>
-            <section id='Resume' className='contenedor resume vh100' ref={ref}>
+            <section id='Resume' className='contenedor resume ' ref={ref}>
 
                 <div>
                     <div className='skills' data-aos="fade-right">
