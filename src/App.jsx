@@ -4,7 +4,6 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 
-
 import { handleScroll } from './Helpers/Helpers';
 import PortFolio from './components/PortFolio';
 import UseFolio from './hooks/UseFolio';
@@ -114,7 +113,7 @@ function App() {
 
       <PortFolio />
 
-      {/* <Contact /> */}
+      <Contact />
 
       <Footer visible={!inView} />
     </>

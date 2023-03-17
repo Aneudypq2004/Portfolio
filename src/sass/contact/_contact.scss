@@ -1,0 +1,35 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contact {
+    display: grid;
+    place-items: center;
+
+
+    &-title {
+        margin: 5rem auto;
+        @include m.title(2rem, blue)
+    }
+
+
+    p{
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 3rem;
+    }
+
+
+    a {
+
+        padding: 2rem 3rem;
+        font-size: 1.5em;
+        color: white;
+        background-color: v.$primario;
+        border-radius: 1rem;
+        transition: all ease-out .3s;
+
+        &:hover{
+            background-color: darken($color: v.$primario, $amount: 10%);
+        }
+    }
+}
