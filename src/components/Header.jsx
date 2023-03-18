@@ -52,6 +52,16 @@ function Header() {
 
         >Portfolio</a>
 
+        <a href='#contact'
+
+          className={actualSeccion === 'contact' ? 'actual' : ''}
+
+          onClick={(e) => {
+            handleScroll(e)
+          }}
+
+        >Contact</a>
+
       </div>
     </div>
   )

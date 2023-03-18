@@ -3,6 +3,11 @@ import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import linkedin from '/icon/linkedin.svg';
+import instagram from '/icon/instagram.svg';
+import telegram from '/icon/telegram.svg';
+import git from '/icon/github.svg';
+
 
 import { handleScroll } from './Helpers/Helpers';
 import PortFolio from './components/PortFolio';
@@ -14,7 +19,7 @@ import { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 Aos.init({
-  once : true
+  once: true
 })
 
 
@@ -47,7 +52,7 @@ function App() {
 
       <Header />
 
-      <main className="background-img"  ref={ref} >
+      <main className="background-img" ref={ref} >
 
         <div className="contenedor flex vh100" data-aos="fade-down" id='Home'>
           <div className='content '>
@@ -78,7 +83,7 @@ function App() {
 
               <a href='#Portfolio'
 
-                className={`boton btn-neon`}
+                className={`boton btn-neon ml-3`}
 
                 onClick={(e) => {
                   handleScroll(e)
@@ -95,9 +100,19 @@ function App() {
 
             </div>
 
+
+
           </div>
 
           {/* <Tecnology /> */}
+
+
+          {/* <div className="media_principal">
+            <a href="https://github.com/Aneudypq2004" target={'_blank'} ><img src={git} width={48} height={48} alt="Social Media" /></a>
+            <a href="/" target={'_blank'}><img src={linkedin} alt="Social Media" /></a>
+            <a href="https://www.instagram.com/aneudypq" target={'_blank'} ><img src={instagram} width={48} height={48} alt="Social Media" /></a>
+            <a href="https://t.me/Aneudypq2004" target={'_blank'} ><img src={telegram} width={48} height={48} alt="Social Media" /></a>
+          </div> */}
 
         </div>
 
@@ -113,7 +128,12 @@ function App() {
 
       <PortFolio />
 
-      <Contact />
+      <div data-aos="fade-down" data-aos-delay="1000" data-aos-easing="ease-in-out"
+      >
+        <Contact />
+
+      </div>
+
 
       <Footer visible={!inView} />
     </>

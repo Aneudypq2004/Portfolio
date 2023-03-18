@@ -4,32 +4,38 @@
 .contact {
     display: grid;
     place-items: center;
+    width: 95%;
+    margin: 2rem auto;
+    margin-bottom: 2rem;
+    max-width: 40rem;
 
 
     &-title {
         margin: 5rem auto;
-        @include m.title(2rem, blue)
+        @include m.title(2.5rem, blue)
     }
+
+
+    h4{
+        font-size: 2rem;
+        color: #00daff;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+    }
+
+
 
 
     p{
         font-size: 1.5rem;
         color: white;
         margin-bottom: 3rem;
+        text-align: justify;
+        line-height: 2rem;
     }
 
+}
 
-    a {
-
-        padding: 2rem 3rem;
-        font-size: 1.5em;
-        color: white;
-        background-color: v.$primario;
-        border-radius: 1rem;
-        transition: all ease-out .3s;
-
-        &:hover{
-            background-color: darken($color: v.$primario, $amount: 10%);
-        }
-    }
+.ml-3{
+    margin-left: 3rem;
 }

@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 95%;
+    overflow: hidden;
     margin: 0 auto;
     position: relative;
     @include m.tablet {
@@ -15,11 +16,11 @@
 
 //Projects
 
+
+
 .project {
-    
     position: relative;
     border-radius: .5rem;
-    overflow: hidden;
     display: grid;
     place-items: end;
     margin-top: 2rem;
@@ -72,6 +73,7 @@
                 padding: 1rem;
                 background-color: rgba($color: v.$primario, $alpha: .8);
                 border-radius: 1.5rem;
+                color: #000;
 
                 &:hover {
                     background-color: darken($color: v.$primario, $amount: 10%);

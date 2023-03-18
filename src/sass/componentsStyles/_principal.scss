@@ -3,7 +3,10 @@
 
 
 .content {
-    margin-top: 10rem;
+
+    @include m.phone {
+        margin-top: 10rem;
+    }
 
 
     // Title
@@ -22,8 +25,7 @@
         }
 
         @include m.tablet {
-            white-space: nowrap;
-            font-size: 5rem;
+            font-size: 6rem;
 
         }
 
@@ -93,4 +95,20 @@
 
     }
 
+}
+
+.media_principal {
+    margin-top: 2rem;
+    display: flex;
+    place-items: center;
+    gap: 2rem;
+
+    a {
+        width: 5rem;
+
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
 }

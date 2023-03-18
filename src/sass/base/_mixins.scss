@@ -37,8 +37,15 @@
     border: 1px solid $color;
     letter-spacing: 2px;
     border-radius: .7rem;
-    margin-left: 3rem;
     position: relative;
+
+    @include phone{
+        width: 100%;
+
+    }
+
+   
+    
 }
 
 

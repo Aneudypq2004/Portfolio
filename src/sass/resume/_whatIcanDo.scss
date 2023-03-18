@@ -4,7 +4,7 @@
 .whatICanDo {
     overflow: hidden;
 
-    H2 {
+    h2 {
         @include m.title(2rem, blue);
         margin-bottom: 3rem;
     }
@@ -19,7 +19,7 @@
     h4 {
         text-transform: uppercase;
         font-size: 2rem;
-        color: white;
+        color: darken($color: v.$primario , $amount: 10%);
         margin-bottom: 1rem;
 
     }
