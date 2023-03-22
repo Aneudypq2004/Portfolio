@@ -56,7 +56,7 @@
     padding: 2rem;
 
     @include m.maxTablet{
-        padding: 6rem 0;
+        padding: 5rem 0;
     }
     background-image:
         linear-gradient(to top, rgba(v.$black, 70%), rgba(v.$black, 10%)),
