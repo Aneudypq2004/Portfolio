@@ -13,9 +13,14 @@
         @content
     }
 
-}
+};
 
-;
+@mixin maxTablet {
+    @media screen and (max-width : v.$tablet) {
+        @content
+    }
+
+};
 
 @mixin desktop {
     @media screen and (min-width : v.$desktop) {

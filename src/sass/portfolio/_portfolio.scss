@@ -8,6 +8,7 @@
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+
     @include m.tablet {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -16,16 +17,16 @@
 
 //Projects
 
-
-
 .project {
+    border: 1px solid gray;
+    padding: 1rem;
     position: relative;
     border-radius: .5rem;
     display: grid;
     place-items: end;
     margin-top: 2rem;
 
-    @include m.tablet{
+    @include m.tablet {
         margin-right: 2rem;
     }
 
@@ -41,6 +42,8 @@
             transform: translateY(0);
             opacity: 1
         }
+
+      
     }
 
     &_content {
@@ -48,13 +51,15 @@
         min-height: 50%;
         background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .5));
         transform: translateY(15rem);
-        transition: all .7s ease-in-out;
+        transition: all .3s ease-in-out;
         padding: 2rem;
         opacity: 0;
         color: white;
 
         h4 {
             @include m.title(2rem, blue);
+            letter-spacing: 2px;
+
         }
 
         ul {
@@ -92,7 +97,17 @@
 
 //Tile
 
-.project_title{
+.project_title {
     @include m.title(2.5rem, blue);
     margin: 2rem auto;
+}
+
+.project_content_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_icon {
+    display: flex;
+    gap: 2rem;
 }
