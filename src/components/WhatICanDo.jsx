@@ -27,7 +27,7 @@ function WhatICanDo() {
         <p>Node Js</p>
 
 
-        <p>Php</p>
+        <p>SQL with mysql</p>
 
 
       </div>

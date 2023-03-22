@@ -15,7 +15,8 @@ import { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 Aos.init({
-  once: true
+  once: true,
+  delay: 300
 })
 
 
@@ -124,7 +125,7 @@ function App() {
 
       <PortFolio />
 
-      <div data-aos="fade-down" data-aos-delay="1000" data-aos-easing="ease-in-out"
+      <div data-aos="fade-down" data-aos-delay="300" data-aos-easing="ease-in-out"
       >
         <Contact />
 

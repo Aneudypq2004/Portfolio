@@ -19,20 +19,23 @@ function Header() {
     <>
       <div className='header' data-aos="fade-left">
 
-        <div className="logo">
 
-          <a href='#Home'
+        {/* <img src={logo} alt="Menu-Icon" width={30} height={30} /> */}
 
-            onClick={(e) => {
-              handleScroll(e)
-            }}
+        <a 
+          href='#Home'        
 
-          ><img src={logo} alt="Menu-Icon" width={30} height={30} />
+          onClick={(e) => {
+            handleScroll(e)
+          }}
 
-          </a>
+          className="logo"
+
+        > AneudyPQ
+
+        </a>
 
 
-        </div>
 
 
         <div className={`header-nav ${open ? 'nav_open ' : 'close'}`}>
