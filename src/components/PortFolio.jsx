@@ -122,8 +122,8 @@ export default function PortFolio() {
 
                 <div className='project_icon'>
 
-                  <a target={'_blank'} href="https://filtrador-de-personajes-rick-and-morty.vercel.app"><img src={git} alt="Icon Git" width={20} height={20} /></a>
-                  <a target="_blank" href="https://nimble-torte-015838.netlify.app"><img src={open} alt="Icon Git" width={20} height={20} /></a>
+                  <a target={'_blank'} href="https://github.com/Aneudypq2004/Filtrador-de-Personajes--Rick-and-Morty"><img src={git} alt="Icon Git" width={20} height={20} /></a>
+                  <a target="_blank" href="https://filtrador-de-personajes-rick-and-morty.vercel.app"><img src={open} alt="Icon Git" width={20} height={20} /></a>
 
                 </div>
 
