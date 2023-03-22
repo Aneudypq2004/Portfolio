@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import UseFolio from '../hooks/UseFolio'
 import { useInView, InView } from 'react-intersection-observer';
-import Line from './Line';
+import git from '/icon/github.svg';
+import open from '../img/icon/arrow-up-right.svg';
 
 //Image
 
@@ -14,7 +15,7 @@ export default function PortFolio() {
 
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: 0,
+    threshold: 1,
   });
 
   useEffect(() => {
@@ -37,13 +38,28 @@ export default function PortFolio() {
 
         <div>
 
+          {/* Project 1 */}
+
           <article className='project' data-aos="fade-right">
 
             <img src={project1} alt="Project Image" />
 
             <div className="project_content">
 
+              <div className='project_content_title'>
+
               <h4>Cotizador criptomonedas</h4>
+
+               <div className='project_icon'>
+
+                <a target={'_blank'} href="https://github.com/Aneudypq2004/Cotizador-de-criptomonedas"><img src={git} alt="Icon Git" width={20} height={20} /></a>
+                <a target="_blank" href="https://classy-kringle-3e9c20.netlify.app/"><img src={open} alt="Icon Git" width={20} height={20} /></a>
+
+               </div>
+
+
+              </div>
+
 
               <p className='project_description'>
                 Lorem ipsum dolor,
@@ -61,38 +77,13 @@ export default function PortFolio() {
               </ul>
 
             </div>
+
           </article>
 
           {/* Second Project  */}
 
 
 
-          <article className='project' data-aos="fade-left">
-
-            <img src={project1} alt="Project Image" />
-
-            <div className="project_content">
-
-              <h4>Cotizador criptomonedas</h4>
-
-              <p className='project_description'>
-                Lorem ipsum dolor,
-                sit amet consectetur adipisicing elit.
-                Porro, inventore! Vitae earum
-                molestiae voluptatem provident rerum, explicabo nobis ea quam.</p>
-
-              {/* Used Tecnologies */}
-
-              <ul>
-                <li>React</li>
-                <li>Sass</li>
-                <li>ApiCompare</li>
-
-              </ul>
-
-            </div>
-
-          </article>
 
 
         </div>
@@ -101,60 +92,7 @@ export default function PortFolio() {
 
         <div>
 
-          <article className='project' data-aos="fade-rigth">
-
-            <img src={project1} alt="Project Image" />
-
-            <div className="project_content">
-
-              <h4>Cotizador criptomonedas</h4>
-
-              <p className='project_description'>
-                Lorem ipsum dolor,
-                sit amet consectetur adipisicing elit.
-                Porro, inventore! Vitae earum
-                molestiae voluptatem provident rerum, explicabo nobis ea quam.</p>
-
-              {/* Used Tecnologies */}
-
-              <ul>
-                <li>React</li>
-                <li>Sass</li>
-                <li>ApiCompare</li>
-
-              </ul>
-
-            </div>
-
-
-          </article>
-          <article className='project' data-aos="fade-left">
-
-            <img src={project1} alt="Project Image" />
-
-            <div className="project_content">
-
-              <h4>Cotizador criptomonedas</h4>
-
-              <p className='project_description'>
-                Lorem ipsum dolor,
-                sit amet consectetur adipisicing elit.
-                Porro, inventore! Vitae earum
-                molestiae voluptatem provident rerum, explicabo nobis ea quam.</p>
-
-              {/* Used Tecnologies */}
-
-              <ul>
-                <li>React</li>
-                <li>Sass</li>
-                <li>ApiCompare</li>
-
-              </ul>
-
-            </div>
-
-
-          </article>
+       
 
         </div>
       </section>

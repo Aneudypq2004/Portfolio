@@ -1,11 +1,33 @@
-import React from 'react'
+import { useInView } from "react-intersection-observer";
+import UseFolio from "../hooks/UseFolio";
+import { useEffect } from "react";
 
 function Contact() {
+
+  const {setActualSeccion} = UseFolio();
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 1,
+    
+  });
+
+  useEffect(() => {
+
+    if(inView) {
+      setActualSeccion('contact')
+    }
+   
+  }, [inView])
+  
+
+
+
   return (
     <>
       <h2 className='contact-title'>Write Me</h2>
 
-      <div className='contact'>
+      <div className='contact' id="contact" ref={ref}>
 
 
 
