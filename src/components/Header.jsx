@@ -17,12 +17,7 @@ function Header() {
 
   return (
     <>
-
-      <img onClick={handleMenu} className="menu" src={open ? close : menu} alt="Menu-Icon" width={30} height={30} />
-
-
       <div className='header' data-aos="fade-left">
-
 
         <div className="logo">
 
@@ -32,7 +27,7 @@ function Header() {
               handleScroll(e)
             }}
 
-          ><img  src={logo} alt="Menu-Icon" width={30} height={30} />
+          ><img src={logo} alt="Menu-Icon" width={30} height={30} />
 
           </a>
 
@@ -84,7 +79,12 @@ function Header() {
 
         </div>
 
+        <img onClick={handleMenu} className="menu" src={open ? close : menu} alt="Menu-Icon" width={30} height={30} />
+
+
       </div>
+
+
     </>
 
   )

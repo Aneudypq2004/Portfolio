@@ -3,10 +3,6 @@ import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import linkedin from '/icon/linkedin.svg';
-import instagram from '/icon/instagram.svg';
-import telegram from '/icon/telegram.svg';
-import git from '/icon/github.svg';
 
 
 import { handleScroll } from './Helpers/Helpers';
