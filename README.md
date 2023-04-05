@@ -1,6 +1,6 @@
 # Portfolio
 
-## Made with
+### Made with
 
 * React
 * SASS
