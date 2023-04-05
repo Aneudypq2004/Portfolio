@@ -50,7 +50,7 @@ function Footer({ visible }) {
 
       <div className="media">
         <a href="https://github.com/Aneudypq2004" target={'_blank'} ><img src={git} width={48} height={48} alt="Social Media" /></a>
-        <a href="/" target={'_blank'}><img src={linkedin} alt="Social Media" /></a>
+        <a href="https://www.linkedin.com/in/luis-de-los-santos-b23480257" target={'_blank'}><img src={linkedin} alt="Social Media" /></a>
         <a href="https://www.instagram.com/aneudypq" target={'_blank'} ><img src={instagram} width={48} height={48} alt="Social Media" /></a>
         <a href="https://t.me/Aneudypq2004" target={'_blank'} ><img src={telegram} width={48} height={48} alt="Social Media" /></a>
       </div>
